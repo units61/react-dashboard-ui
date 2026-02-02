@@ -4,16 +4,22 @@ const Settings = () => {
       title: 'Profile Settings',
       icon: '👤',
       items: ['Name', 'Email', 'Password', 'Avatar'],
+      iconBg: 'bg-purple-50',
+      iconColor: 'text-purple-600',
     },
     {
       title: 'Notifications',
       icon: '🔔',
       items: ['Email Notifications', 'Push Notifications', 'SMS Alerts'],
+      iconBg: 'bg-amber-50',
+      iconColor: 'text-amber-600',
     },
     {
       title: 'Preferences',
       icon: '⚙️',
       items: ['Theme', 'Language', 'Timezone', 'Date Format'],
+      iconBg: 'bg-blue-50',
+      iconColor: 'text-blue-600',
     },
   ]
 
@@ -29,7 +35,7 @@ const Settings = () => {
           {settingsSections.map((section, index) => (
             <div key={index} className="border-b border-gray-100 last:border-0 pb-8 last:pb-0">
               <div className="flex items-center gap-3.5 mb-6">
-                <div className="p-2.5 rounded-xl bg-primary-50">
+                <div className={`p-2.5 rounded-xl ${section.iconBg}`}>
                   <span className="text-xl leading-none block">{section.icon}</span>
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 tracking-tight">{section.title}</h3>
