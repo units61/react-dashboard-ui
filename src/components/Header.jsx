@@ -1,7 +1,7 @@
 const Header = ({ title }) => {
   return (
-    <header className="bg-white/80 backdrop-blur-lg shadow-sm border-b border-gray-100 sticky top-0 z-20 h-[73px] flex items-center">
-      <div className="flex items-center justify-between px-6 lg:px-8 w-full py-5">
+    <header className="bg-white/80 backdrop-blur-lg shadow-sm border-b border-gray-100 sticky top-0 z-20 h-[73px] flex items-center flex-shrink-0">
+      <div className="flex items-center justify-between px-6 lg:px-8 w-full">
         <div>
           <h2 className="text-2xl font-bold text-gray-900 tracking-tight">{title}</h2>
           <p className="text-sm text-gray-500 mt-0.5 font-medium">Welcome back</p>

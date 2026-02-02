@@ -37,9 +37,10 @@ const Sidebar = ({ currentPage, onNavigate }) => {
       {/* Sidebar */}
       <aside
         className={`
-          fixed lg:relative inset-y-0 left-0 z-40
+          fixed lg:static inset-y-0 left-0 z-40
           w-72 flex-shrink-0 bg-white shadow-xl border-r border-gray-100
           transform transition-transform duration-300 ease-in-out
+          h-screen
           ${isMobileOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
         `}
       >

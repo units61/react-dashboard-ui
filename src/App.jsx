@@ -31,7 +31,7 @@ function App() {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50 flex">
       <Sidebar currentPage={currentPage} onNavigate={setCurrentPage} />
       
-      <div className="flex-1 flex flex-col min-w-0">
+      <div className="flex-1 flex flex-col min-w-0 lg:ml-0">
         <Header title={pageTitles[currentPage] || 'Dashboard'} />
         
         <main className="flex-1 p-6 lg:p-8">
