@@ -28,13 +28,13 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50 flex">
       <Sidebar currentPage={currentPage} onNavigate={setCurrentPage} />
       
-      <div className="lg:pl-72">
+      <div className="flex-1 flex flex-col min-w-0">
         <Header title={pageTitles[currentPage] || 'Dashboard'} />
         
-        <main className="p-8 lg:p-10">
+        <main className="flex-1 p-6 lg:p-8">
           {renderPage()}
         </main>
       </div>

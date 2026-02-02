@@ -37,15 +37,15 @@ const Sidebar = ({ currentPage, onNavigate }) => {
       {/* Sidebar */}
       <aside
         className={`
-          fixed lg:static inset-y-0 left-0 z-40
-          w-72 bg-white shadow-xl border-r border-gray-100
+          fixed lg:relative inset-y-0 left-0 z-40
+          w-72 flex-shrink-0 bg-white shadow-xl border-r border-gray-100
           transform transition-transform duration-300 ease-in-out
           ${isMobileOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
         `}
       >
         <div className="flex flex-col h-full">
           {/* Logo */}
-          <div className="flex items-center justify-center h-20 px-6 border-b border-gray-100">
+          <div className="flex items-center justify-center h-[73px] px-6 border-b border-gray-100">
             <h1 className="text-2xl font-bold bg-gradient-to-r from-primary-600 via-primary-500 to-primary-400 bg-clip-text text-transparent tracking-tight">
               Dashboard
             </h1>
