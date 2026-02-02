@@ -12,6 +12,10 @@ A modern, responsive dashboard UI built with React and Tailwind CSS. Perfect for
 - 📈 Chart placeholder section
 - ⚡ Built with Vite for fast development
 
+## Live Demo
+
+https://react-dashboard-ui.vercel.app
+
 ## Tech Stack
 
 - **React** 18.2.0
